@@ -39,6 +39,8 @@ darkerpink = Color(0xDB7093, 1.0)
 darkestpink = Color(0xCD5278, 1.0)
 waydark = Color(0x8B2252, 1.0)
 brown = Color(0x8B5A2B, 1.0)
+orange = Color(0xFF8247, 1.0)
+green = Color(0x2E8B57, 1.0)
 
 #defining line
 thinlineblue = LineStyle(1, cornflowerblue) 
@@ -51,6 +53,8 @@ thinlinedarkerpink = LineStyle(1, darkerpink)
 thinlinedarkestpink = LineStyle(1, darkestpink)
 thinlinewaydark = LineStyle(1, waydark)
 thinlinebrown = LineStyle(1, brown)
+thinlineorange = LineStyle(1, orange) 
+thinlinegreen = LineStyle(1, green)
 
 #Defining Shapes
 head = CircleAsset(150, thinlinewhite, pink)
@@ -62,6 +66,8 @@ eartopr = PolygonAsset([(70,220), (110, 260), (180, 170)], thinlinedarkerpink, d
 earbottoml = PolygonAsset([(70, 170), (140, 260), (100, 260)], thinlinedarkestpink, darkestpink)
 earbottomr = PolygonAsset([(110,260), (180,170), (150, 260)], thinlinedarkestpink, darkestpink)
 body = RectangleAsset(350,200,thinlinepink, pink)
+carrot = PolygonAsset([(90,100), (300, 80), (300, 130)], thinlineorange, orange)
+shoot = RectangleAsset(100,3,thinlinegreen, green)
     
 #print
 Sprite(head, (200,200))
@@ -75,6 +81,10 @@ Sprite(eartopr, (435, 180))
 Sprite(earbottoml, (155,178))
 Sprite(earbottomr, (475,181))
 Sprite(body, (175, 485))
+s = Sprite(shoot, (800, 340))
+r = Sprite(shoot, (800, 340))
+c = Sprite(carrot, (600, 390))
+c.rotation=.4
 
 #s.rotation=inradians
 # add your code here /\  /\  /\
