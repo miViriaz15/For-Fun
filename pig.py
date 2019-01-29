@@ -67,7 +67,7 @@ earbottoml = PolygonAsset([(70, 170), (140, 260), (100, 260)], thinlinedarkestpi
 earbottomr = PolygonAsset([(110,260), (180,170), (150, 260)], thinlinedarkestpink, darkestpink)
 body = RectangleAsset(350,200,thinlinepink, pink)
 carrot = PolygonAsset([(90,100), (300, 80), (300, 130)], thinlineorange, orange)
-shoot = RectangleAsset(100,3,thinlinegreen, green)
+shoot = RectangleAsset(100,1.5,thinlinegreen, green)
     
 #print
 Sprite(head, (200,200))
@@ -80,9 +80,39 @@ Sprite(eartopl, (155,178))
 Sprite(eartopr, (435, 180))
 Sprite(earbottoml, (155,178))
 Sprite(earbottomr, (475,181))
-Sprite(body, (175, 485))
-s = Sprite(shoot, (800, 340))
-r = Sprite(shoot, (800, 340))
+#Sprite(body, (175, 485))
+s = Sprite(shoot, (800, 335))
+t = Sprite(shoot, (800, 335))
+t.rotation=-.07
+j = Sprite(shoot, (800, 335))
+j.rotation=.07
+r = Sprite(shoot, (800, 337))
+r.rotation=-.1
+k = Sprite(shoot, (800, 339))
+k.rotation=-.15
+y = Sprite(shoot, (800, 341))
+y.rotation=-.2
+f = Sprite(shoot, (800, 333))
+f.rotation=.1
+z = Sprite(shoot, (800, 331))
+z.rotation=.15
+d = Sprite(shoot, (800, 329))
+d.rotation=.2
+a = Sprite(shoot, (800, 327))
+a.rotation=.25
+q = Sprite(shoot, (800, 325))
+q.rotation=.3
+x = Sprite(shoot, (800, 323))
+x.rotation=.35
+w = Sprite(shoot, (800, 321))
+w.rotation=.4
+o = Sprite(shoot, (800, 319))
+o.rotation=.45
+e = Sprite(shoot, (800, 317))
+e.rotation=.5
+e = Sprite(shoot, (800, 317))
+e.rotation=.55
+
 c = Sprite(carrot, (600, 390))
 c.rotation=.4
 
