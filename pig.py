@@ -60,7 +60,7 @@ thinlinegreen = LineStyle(1, green)
 head = CircleAsset(150, thinlinewhite, pink)
 nose = EllipseAsset(50, 30, thinlinedarkestpink, darkestpink)
 nostril = CircleAsset (10, thinlinewaydark, waydark)
-eye = CircleAsset(13, thinlinebrown, brown)
+eye = CircleAsset(10, thinlinebrown, brown)
 eartopl = PolygonAsset([(70, 170), (180, 220), (140, 260)], thinlinedarkerpink, darkerpink)
 eartopr = PolygonAsset([(70,220), (110, 260), (180, 170)], thinlinedarkerpink, darkerpink)
 earbottoml = PolygonAsset([(70, 170), (140, 260), (100, 260)], thinlinedarkestpink, darkestpink)
@@ -68,14 +68,17 @@ earbottomr = PolygonAsset([(110,260), (180,170), (150, 260)], thinlinedarkestpin
 body = RectangleAsset(350,200,thinlinepink, pink)
 carrot = PolygonAsset([(90,100), (300, 80), (300, 130)], thinlineorange, orange)
 shoot = RectangleAsset(100,1.5,thinlinegreen, green)
-    
+whiteeye = CircleAsset(32,thinlinewhite,white)
+
 #print
 Sprite(head, (200,200))
 Sprite(nose, (300, 350))
 Sprite(nostril, (318, 370))
 Sprite(nostril, (361, 370))
-Sprite(eye, (260, 300))
-Sprite(eye, (410, 300))
+Sprite(whiteeye, (235,290))
+Sprite(whiteeye, (400,290))
+Sprite(eye, (270, 315))
+Sprite(eye, (435, 315))
 Sprite(eartopl, (155,178))
 Sprite(eartopr, (435, 180))
 Sprite(earbottoml, (155,178))
@@ -108,13 +111,14 @@ w = Sprite(shoot, (800, 321))
 w.rotation=.4
 o = Sprite(shoot, (800, 319))
 o.rotation=.45
-e = Sprite(shoot, (800, 317))
+e = Sprite(shoot, (798, 317))
 e.rotation=.5
-e = Sprite(shoot, (800, 317))
-e.rotation=.55
+l = Sprite(shoot, (797, 315))
+l.rotation=.55
 
-c = Sprite(carrot, (600, 390))
-c.rotation=.4
+
+c = Sprite(carrot, (600, 380))
+c.rotation=.365
 
 #s.rotation=inradians
 # add your code here /\  /\  /\
