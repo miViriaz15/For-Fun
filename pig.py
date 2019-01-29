@@ -53,7 +53,7 @@ thinlinewaydark = LineStyle(1, waydark)
 thinlinebrown = LineStyle(1, brown)
 
 #Defining Shapes
-head = CircleAsset(150, thinlinepink, pink)
+head = CircleAsset(150, thinlinewhite, pink)
 nose = EllipseAsset(50, 30, thinlinedarkestpink, darkestpink)
 nostril = CircleAsset (10, thinlinewaydark, waydark)
 eye = CircleAsset(13, thinlinebrown, brown)
@@ -61,6 +61,7 @@ eartopl = PolygonAsset([(70, 170), (180, 220), (140, 260)], thinlinedarkerpink, 
 eartopr = PolygonAsset([(70,220), (110, 260), (180, 170)], thinlinedarkerpink, darkerpink)
 earbottoml = PolygonAsset([(70, 170), (140, 260), (100, 260)], thinlinedarkestpink, darkestpink)
 earbottomr = PolygonAsset([(110,260), (180,170), (150, 260)], thinlinedarkestpink, darkestpink)
+body = RectangleAsset(350,200,thinlinepink, pink)
     
 #print
 Sprite(head, (200,200))
@@ -73,6 +74,7 @@ Sprite(eartopl, (155,178))
 Sprite(eartopr, (435, 180))
 Sprite(earbottoml, (155,178))
 Sprite(earbottomr, (475,181))
+Sprite(body, (175, 485))
 
 #s.rotation=inradians
 # add your code here /\  /\  /\
