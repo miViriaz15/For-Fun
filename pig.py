@@ -60,7 +60,8 @@ eye = CircleAsset(13, thinlinebrown, brown)
 eartopl = PolygonAsset([(70, 170), (180, 220), (140, 260)], thinlinedarkerpink, darkerpink)
 eartopr = PolygonAsset([(70,220), (110, 260), (180, 170)], thinlinedarkerpink, darkerpink)
 earbottoml = PolygonAsset([(70, 170), (140, 260), (100, 260)], thinlinedarkestpink, darkestpink)
-
+earbottomr = PolygonAsset([(110,260), (180,170), (150, 260)], thinlinedarkestpink, darkestpink)
+    
 #print
 Sprite(head, (200,200))
 Sprite(nose, (300, 350))
@@ -71,7 +72,7 @@ Sprite(eye, (410, 300))
 Sprite(eartopl, (155,178))
 Sprite(eartopr, (435, 180))
 Sprite(earbottoml, (155,178))
-
+Sprite(earbottomr, (475,181))
 
 #s.rotation=inradians
 # add your code here /\  /\  /\
