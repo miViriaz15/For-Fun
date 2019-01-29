@@ -69,6 +69,8 @@ body = RectangleAsset(350,200,thinlinepink, pink)
 carrot = PolygonAsset([(90,100), (300, 80), (300, 130)], thinlineorange, orange)
 shoot = RectangleAsset(100,1.5,thinlinegreen, green)
 whiteeye = CircleAsset(32,thinlinewhite,white)
+fly = EllipseAsset(7,4,thinlineblack, black)
+wing = EllipseAsset(4,1,thinlineblack,black)
 
 #print
 Sprite(head, (200,200))
@@ -77,8 +79,8 @@ Sprite(nostril, (318, 370))
 Sprite(nostril, (361, 370))
 Sprite(whiteeye, (235,290))
 Sprite(whiteeye, (400,290))
-Sprite(eye, (270, 315))
-Sprite(eye, (435, 315))
+Sprite(eye, (275, 315))
+Sprite(eye, (404, 315))
 Sprite(eartopl, (155,178))
 Sprite(eartopr, (435, 180))
 Sprite(earbottoml, (155,178))
@@ -119,6 +121,12 @@ l.rotation=.55
 
 c = Sprite(carrot, (600, 380))
 c.rotation=.365
+
+Sprite(fly, (343,318))
+h=Sprite(wing, (347,311.5))
+h.rotation=-.85
+u=Sprite(wing, (356,311.5))
+u.rotation=-1.8
 
 #s.rotation=inradians
 # add your code here /\  /\  /\
