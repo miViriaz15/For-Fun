@@ -36,8 +36,8 @@ gold = Color(0xFFD700, 1.0)
 golder = Color(0xFFC900, 1.0)
 pink = Color(0xFFB6C1, 1.0)
 darkerpink = Color(0xDB7093, 1.0)
-darkestpink = Color(0xEE3A8C, 1.0)
-waydark = Color(0xCD3278, 1.0)
+darkestpink = Color(0xCD5278, 1.0)
+waydark = Color(0x8B2252, 1.0)
 brown = Color(0x8B5A2B, 1.0)
 
 #defining line
@@ -53,10 +53,18 @@ thinlinewaydark = LineStyle(1, waydark)
 thinlinebrown = LineStyle(1, brown)
 
 #Defining Shapes
-
+head = CircleAsset(150, thinlinepink, pink)
+nose = EllipseAsset(50, 30, thinlinedarkestpink, darkestpink)
+nostril = CircleAsset (10, thinlinewaydark, waydark)
+eye = CircleAsset(13, thinlinebrown, brown)
+eartop =
 #print
-   
-   
+Sprite(head, (200,200))
+Sprite(nose, (300, 350))
+Sprite(nostril, (318, 370))
+Sprite(nostril, (361, 370))
+Sprite(eye, (260, 300))
+Sprite(eye, (410, 300))
 #s.rotation=inradians
 # add your code here /\  /\  /\
 
